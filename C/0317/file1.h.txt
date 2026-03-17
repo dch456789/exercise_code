@@ -1,0 +1,5 @@
+#ifndef _MZJ_H
+#define _MZJ_H
+extern void test(void);
+extern int y;
+#endif
