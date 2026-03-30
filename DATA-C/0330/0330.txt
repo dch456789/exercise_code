@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+void try1(void)
+{
+    char *str =(char*)calloc(10,sizeof(char));
+    int num = 0;
+    int weigh = 10;
+    while((str[num++] = getchar()) != '\n')
+    {
+        if((num)%10 == 0)
+        {
+            str = (char*)realloc(str,sizeof(char)*(weigh*=2));
+            puts("扩容成功");
+            
+        }
+    }
+    num -= 1;
+    return;
+}
+
+int main(void)
+{
+    try1();
+    return 0;
+}
