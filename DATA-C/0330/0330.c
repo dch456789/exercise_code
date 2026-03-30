@@ -33,6 +33,7 @@ void try1(void)
     }
     printf("%d\n",strlen(str));
     lefttrust(str,num);
+    free(str);
     return;
 }
 
