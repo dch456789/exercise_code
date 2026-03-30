@@ -8,35 +8,35 @@ typedef struct
     int freq;
 }al_fq_t;
 
-al_fq_t *cal_al_freq(const char *string,int *num);
-al_fq_t *cal_al_freq(const char *string,int *num)
+al_fq_t *cal_al_freq(const char *string,int *num);  //函数声明
+al_fq_t *cal_al_freq(const char *string,int *num)   //函数原型
 {
     int index;
-    int freq[256] = {0};
-    int count = 0;
-    int ii = 0;
+    int freq[256] = {0};    //用来存储出现频次
+    int count = 0;          //用来存储字符种类
+    int ii = 0;             //单增
     al_fq_t *res;
-    for(index = 0;string[index];index++)
+    for(index = 0;string[index];index++)    //循环条件：当前位不为空
     {
-        freq[string[index]]++;
+        freq[string[index]]++;              //freq对应ASCII码位的频次+1
     }
     for(index = 0;index < 256;index++)
     {
         if(freq[index])
         {
-            count++;
+            count++;                        //计算字符种类
         }
     }
-    res = (al_fq_t*)calloc(sizeof(al_fq_t),count);
-    for(index = 0;index < 256;index++)
+    res = (al_fq_t*)calloc(sizeof(al_fq_t),count);      //申请存放字符和频次的空间
+    for(index = 0;index < 256;index++)                  //字符和频次录入
     {
         if(freq[index])
         {
-            res[ii].ch = index;
-            res[ii++].freq = freq[index];
+            res[ii].ch = index;                         //字符录入
+            res[ii++].freq = freq[index];               //频次录入
         }
     }
-    *num = count;
+    *num = count;                                       //返回字符种类
     return res;
 }
 
@@ -52,11 +52,11 @@ int main(void)
     al_fq_t *alpha_freq = NULL;
     printf("请输入一个字符串：");
     gets(str);
-    alpha_freq = cal_al_freq(str, &count);
+    alpha_freq = cal_al_freq(str, &count);  //函数调用，传入字符指针和count的地址
     for(int index = 0;index < count;index++)
     {
         printf("al:%c  al:%d\n",alpha_freq[index],alpha_freq[index].freq);
     }
-    free(alpha_freq);
+    free(alpha_freq);   //释放申请的空间
     return 0;
 }
