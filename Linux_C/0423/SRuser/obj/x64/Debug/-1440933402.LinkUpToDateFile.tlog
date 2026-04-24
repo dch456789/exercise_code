@@ -1,1 +1,0 @@
-cd /home/dch456789/projects/SRuser/; g++ -o "/home/dch456789/projects/SRuser/bin/x64/Debug/SRuser.out" -Wl,--no-undefined -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack /home/dch456789/projects/SRuser/obj/x64/Debug/SRuser.o
