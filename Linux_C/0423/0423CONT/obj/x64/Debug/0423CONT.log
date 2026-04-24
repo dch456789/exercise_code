@@ -1,0 +1,13 @@
+﻿  正在清理远程项目目录
+  正在验证源
+  正在将源远程复制到“110.110.110.2”
+  正在验证体系结构
+  正在验证体系结构
+  正在启动远程生成
+  正在编译源:
+  server_dch.c
+E:\Code\Linux_C\0423\0423CONT\server_dch.c(40,34): warning : conversion to ‘unsigned int’ from ‘int’ may change the sign of the result [-Wsign-conversion]
+E:\Code\Linux_C\0423\0423CONT\server_dch.c(40,34): warning :    40 |                 sleep(rand() % 3 + 1);
+E:\Code\Linux_C\0423\0423CONT\server_dch.c(40,34): warning :       |                       ~~~~~~~~~~~^~~
+  正在链接对象
+  0423CONT.vcxproj -> E:\Code\Linux_C\0423\0423CONT\bin\x64\Debug\0423CONT.out
