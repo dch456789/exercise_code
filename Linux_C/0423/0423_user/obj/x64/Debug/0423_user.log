@@ -1,9 +1,0 @@
-﻿  正在验证源
-  正在将源远程复制到“110.110.110.2”
-  正在验证体系结构
-  正在验证体系结构
-  正在启动远程生成
-  正在链接对象
-/usr/bin/ld : error : /home/dch456789/projects/0423_user/obj/x64/Debug/user_noband.o: in function `main':
-E:\Code\Linux_C\0423\0423_user\user_noband.c(13): error : multiple definition of `main'; /home/dch456789/projects/0423_user/obj/x64/Debug/useman.o:/home/dch456789/projects/0423_user/useman.c:13: first defined here
-collect2 : error : ld returned 1 exit status
