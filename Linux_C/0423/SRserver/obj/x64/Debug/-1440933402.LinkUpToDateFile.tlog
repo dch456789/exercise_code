@@ -1,1 +1,0 @@
-cd /home/dch456789/projects/0423SRserver/; g++ -o "/home/dch456789/projects/0423SRserver/bin/x64/Debug/0423SRserver.out" -Wl,--no-undefined -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack /home/dch456789/projects/0423SRserver/obj/x64/Debug/SRserver.o
