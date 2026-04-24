@@ -1,1 +1,0 @@
-cd /home/dch456789/projects/0423CONT/; g++ -o "/home/dch456789/projects/0423CONT/bin/x64/Debug/0423CONT.out" -Wl,--no-undefined -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack /home/dch456789/projects/0423CONT/obj/x64/Debug/server_dch.o
