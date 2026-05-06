@@ -1,0 +1,5 @@
+﻿  String.cpp
+E:\Code\C++\0506\0506\0506_1\String.cpp(38,10): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+E:\Code\C++\0506\0506\0506_1\String.cpp(45,48): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+E:\Code\C++\0506\0506\0506_1\String.cpp(69,15): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+  0506_1.vcxproj -> E:\Code\C++\0506\0506\x64\Debug\0506_1.exe
