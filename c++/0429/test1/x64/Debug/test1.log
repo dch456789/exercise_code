@@ -1,0 +1,16 @@
+﻿  0429.2_1.cpp
+E:\Code\C++\0429\test1\0429.2_1.cpp(37,27): error C2572: “circle::init”: 重定义默认参数 : 参数 1
+      E:\Code\C++\0429\test1\0429.2_1.h(26,7):
+      参见“circle::init”的声明
+  
+E:\Code\C++\0429\test1\0429.2_1.cpp(37,38): error C2572: “circle::init”: 重定义默认参数 : 参数 2
+      E:\Code\C++\0429\test1\0429.2_1.h(26,7):
+      参见“circle::init”的声明
+  
+E:\Code\C++\0429\test1\0429.2_1.cpp(37,49): error C2572: “circle::init”: 重定义默认参数 : 参数 3
+      E:\Code\C++\0429\test1\0429.2_1.h(26,7):
+      参见“circle::init”的声明
+  
+  0429.1.cpp
+  0429.2.cpp
+  正在生成代码...

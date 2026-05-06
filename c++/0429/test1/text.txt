@@ -1,0 +1,106 @@
+#include "0429.2_1.h"
+using namespace std;
+
+class point
+{
+private:
+	int x;
+	int y;
+public:
+	void init(void)
+	{
+		this->x = 0;
+		this->y = 0;
+	}
+	void init(int x)
+	{
+		this->x = x;
+		this->y = x;
+	}
+	void init(int x, int y)
+	{
+		this->x = x;
+		this->y = y;
+	}
+	void init(const point& p)
+	{
+		this->x = p.x;
+		this->y = p.y;
+	}
+	void toprint(void)
+	{
+		std::cout << "Point(" << x << "," << y << ")";
+	}
+	int& getX(void)
+	{
+		return this->x;
+	}
+	int& getY(void)
+	{
+		return this->y;
+	}
+};
+class circle
+{
+private:
+	point p;
+	int r;
+public:
+	void init(int x = 0, int y = 0, int r = 0)
+	{
+		this->p.init(x, y);
+		this->r = r;
+	}
+	void toprint(void)
+	{
+		std::cout << "Circle:([x=" << this->p.getX() << "][y=" << this->p.getY() << "][r=" << this->r << "])";
+	}
+	int& getX(void)
+	{
+		return this->p.getX();
+	}
+	int& getY(void)
+	{
+		return this->p.getY();
+	}
+	int& getR(void)
+	{
+		return this->r;
+	}
+};
+bool Point_In_Circle(point& p, circle& c)
+{
+	int dd = (p.getX() - c.getX()) * (p.getX() - c.getX()) + ((p.getY()) - (c.getY())) * ((p.getY()) - (c.getY())) - c.getR() * c.getR();
+	if (dd > 0) {
+		//p.toprint();
+		//std::cout << " 在 ";
+		//c.toprint();
+		//std::cout << " 内" << endl;
+		return true;
+	}
+	else {
+		//p.toprint();
+		//std::cout << " 在 ";
+		//c.toprint();
+		//std::cout << " 外" << endl;
+		return false;
+	}
+}
+bool Point_In_Circle(circle& c, point& p)
+{
+	int dd = (p.getX() - c.getX()) * (p.getX() - c.getX()) + ((p.getY()) - (c.getY())) * ((p.getY()) - (c.getY())) - c.getR() * c.getR();
+	if (dd > 0) {
+		p.toprint();
+		std::cout << " 在 ";
+		c.toprint();
+		std::cout << " 内";
+		return true;
+	}
+	else{
+		//p.toprint();
+		//cout << " 在 ";
+		//c.toprint();
+		//cout << " 外" << endl;
+		return false;
+	}
+}
